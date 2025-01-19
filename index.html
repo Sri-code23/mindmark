@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMark</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main-content">
+        <header class="header">
+            <h1>MindMark</h1>
+        </header>
+
+        <div id="note-grid" class="note-grid"></div>
+
+        <button id="create-note" class="btn-new-note" aria-label="Create New Note">
+            <i class="ri-add-line"></i>
+        </button>
+        
+        <footer class="footer">
+            <i id="home-btn" class="ri-home-5-line footer-icon active"></i>
+            <i id="recycle-bin" class="ri-delete-bin-7-line footer-icon"></i>
+            <i id="dark-mode-toggle" class="ri-contrast-2-line footer-icon"></i>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+
+    <div id="edit-page">
+        <div class="header">
+            <h2>Edit</h2>
+            <div class="actions">
+                <i id="pin-note" class="ri-pushpin-line"></i>
+                <i id="color-picker" class="ri-palette-line"></i>
+                <i id="save-note" class="ri-save-line"></i>
+                <i id="delete-note" class="ri-delete-bin-line"></i>
+                <i id="close-edit" class="ri-close-line"></i>
+            </div>
+        </div>
+        <input type="text" id="note-title" placeholder="Note Title">
+        <textarea id="note-content" rows="10" placeholder="Note Content"></textarea>
+        <div id="color-dropdown"></div>
+    </div>
+</body>
+</html>
